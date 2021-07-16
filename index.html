@@ -9,57 +9,67 @@
     </head>
     <body>
         <!--
-            use list tags to organize your content
-            There are three different types of lists in html
-            ol => Ordered List, numbered items in order
-            ul => Unordered List, items without order
-            dl => Description List 
-            li => List Item
-            list item is the content for any list type
-            list items indented from it's main container
-            lists could be nested in each other 
+            use table tag in HTML to construct tables
+            tables show data in columns and rows
+            thead => Table Header data show 1st regardless element order
+            tbody => Table body or content data show after head
+            tfoot => Table Footer data show last regardless element order
+            caption => Table Caption or title descriping table contents
+            tr => Table Row divide data into rows
+            td => Table Data include data to show in table cells
+            th => Table Header Cell with spercial formatting for headers
+                default header formatting as Bold and centered
+            table attributes: better to be used in css
+                - border => SHow border arround table and cells without css
+                - cellpadding => define gab between cells
         -->
         <h1>Book Store</h1>
         <p>This Is My <b>Book Store</b>, Welcome.</p>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>
-                JS
-                <ul>
-                    <li>Angular</li>
-                    <li>Reactjs</li>
-                    <li>Vuejs</li>
-                </ul>
-            </li>
-        </ul>
-        <!-- Separator  -->
-        <!--
-            These attributes for ordered list only
-            reversed => reverse list ordering
-            start => specify starting order value
-            type => change type of ordering (like alphabet, numeric, roman ...etc)
-        -->
-        <ol reversed start="100" type="1">
-            <!--
-                These attributes for list item only
-                value => change element order value and continue ordering
-            -->
-            <li value="">Name</li>
-            <li>Adress</li>
-            <li>Id</li>
-        </ol>
-        <!-- Separator  -->
-        <dl>
-            <!--
-                dt => Term need to be listed
-                dd => Description Term for each term listed
-            -->
-            <dt>HTML</dt>
-            <dd>Language Of The Web</dd>
-            <dd>The First Lang.</dd>
-            <dt>CSS</dt>
-            <dd>Language Of The Visuals</dd>
-        </dl>
+        <table border="1" cellpadding="5px">
+            <thead>
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ahmed</td>
+                    <td>Sherif</td>
+                    <td>50</td>
+                </tr>
+                
+                <tr>
+                    <td>Hla</td>
+                    <td>Ahmed</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>Lojin</td>
+                    <td>Ahmed</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>Ruqia</td>
+                    <td>Ahmed</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>Doaa</td>
+                    <td>Hassan</td>
+                    <td>100</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!--
+                        colspan => allow merging two or more cells
+                    -->
+                    <td colspan="2">Total</td>
+                    <td>400</td>
+                </tr>
+            </tfoot>
+        </table>
     </body>
 </html>
