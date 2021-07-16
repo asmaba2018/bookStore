@@ -9,17 +9,31 @@
     </head>
     <body>
         <!--
-            each element in HTML language could be represented as an entity
-            start entity with & then entity and close with ;
-            < => "&lt;" opening tag or less than
-            > => "&gt;" closing tag or greater than
-            & => "&amp;" ampersand 
-            c => "&copy;" copyrights symbol
+            use semantics in HTML5 instead of div
+            header => Head Of Page
+            nav => Navigation Bar
+            section => New Section In document
+            aside => Side Navigation Section
+            footer => Footer Of Page
+            no special styles without css
+            it's a better organizing tool than div
+            cascading semantics the same way as div
         -->
-        <div>
-            <h1>Book Store</h1>
-            <p>This Is My Book Store, Welcome.</p>
-            <div>This Is My &lt;p&gt; &amp; &copy; Div</div>
-        </div>
+        <header>Page Header</header>
+        <nav>
+            Links - Links - Links
+        </nav>
+        <section>
+            <section>
+                <article>article1</article>
+                <article>article2</article>
+                <article>article3</article>
+            </section>
+            <aside>
+                <article>side article1</article>
+                <article>side article2</article>
+            </aside>
+        </section>
+        <footer>Page Footer</footer>
     </body>
 </html>
