@@ -9,19 +9,70 @@
     </head>
     <body>
         <!--
-            use span tag to customize specific content
-            put any text between span tags and start customization
-            span is an inline element by default doesn't add special effects
-            can change user parameters from browser as css code
-            br => break text in a new line, inline element
-            hr => Horizontal ruler draw one line, block element
+            use div element to create new division
+            most common used tag in the web
+            div => Group some elements together and manage them as one
+                apply style css code as one element
+            div elements could be nested as levels for advanced control
         -->
-        <h1>Book Store</h1>
-        <p>This Is <span>My</span> <b>Book Store</b>, Welcome.</p>
-        <!-- no difference between word in and out of span -->
-        <span>Word</span> Word again
-        <p>This Is Second Paragraph , <br>Test <br>Test Again</p>
+        <div>
+            <h1>Book Store</h1>
+            <p>This Is My Book Store, Welcome.</p>
+        </div>
+
+        <div class="romantic">
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book description</p>
+                <span>$100</span>
+            </div>
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book description</p>
+                <span>$100</span>
+            </div>
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book description</p>
+                <span>$100</span>
+            </div>            
+        </div>
         <hr>
-        <p>This Is Third Paragraph</p>
+        <div class="police">
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book description</p>
+                <span>$100</span>
+            </div>
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book description</p>
+                <span>$100</span>
+            </div>
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book description</p>
+                <span>$100</span>
+            </div>
+        </div>
+        <hr>
+        <div class="fantasy">
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book description</p>
+                <span>$100</span>
+            </div>
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book description</p>
+                <span>$100</span>
+            </div>
+            <div class="book">
+                <h3>Book Title</h3>
+                <p>Book description</p>
+                <span>$100</span>
+            </div>
+        </div>
+
     </body>
 </html>
