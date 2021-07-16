@@ -9,31 +9,37 @@
     </head>
     <body>
         <!--
-            use semantics in HTML5 instead of div
-            header => Head Of Page
-            nav => Navigation Bar
-            section => New Section In document
-            aside => Side Navigation Section
-            footer => Footer Of Page
-            no special styles without css
-            it's a better organizing tool than div
-            cascading semantics the same way as div
+            create page layout like famous pages using divs
+            without styling with css
         -->
-        <header>Page Header</header>
-        <nav>
-            Links - Links - Links
-        </nav>
-        <section>
-            <section>
-                <article>article1</article>
-                <article>article2</article>
-                <article>article3</article>
-            </section>
-            <aside>
-                <article>side article1</article>
-                <article>side article2</article>
-            </aside>
-        </section>
-        <footer>Page Footer</footer>
+        <div class="header">
+            <h2>Logo</h2> <!-- page logo or name -->
+            <!-- links for other pages may in the same project -->
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <hr>
+        <ul>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+        </ul>
+        <hr>
+        <div class="content">
+            Content
+        </div>
+        <div class="sidebar">
+            Sidebar
+        </div>
+        <hr>
+        <div class="footer">
+            Footer
+        </div>
     </body>
 </html>
