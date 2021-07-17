@@ -9,51 +9,26 @@
     </head>
     <body>
         <!--
-            create page layout like famous pages using semantics
-            without styling with css
-            like div layout with more descriptive elements
-            can add classes to it and apply styles like div
+            use audio tag to play an audio file in your document
+            src attribute in audio tag to hold reference for audio file
+            alternate use source tag to provide more alt. audio types
+                to avoid supporting problems
+            type attribute to inform browser with audio type
+            controls attribute to show controlling buttons
+            autoplay attribute to enable autoplay when document loaded
+            loop attribute to enable loop playing over and over
         -->
-        <header>
-            <h2>Logo</h2> <!-- page logo or name -->
-            <!-- links for other pages may in the same project -->
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contact Us</li>
-            </ul>
-        </header>
-        <hr>
-        <nav>
-            <li>Link</li>
-            <li>Link</li>
-            <li>Link</li>
-            <li>Link</li>
-            <li>Link</li>
-        </nav>
-        <hr>
-        <section>
-            Content
-            <!--
-                use figure semantic with images and captions
-                figcaption => paragraph describing figure or image
-                figure => div or section contains an image and its caption
-            -->
-            <figure>
-                <img src="images/elzero-cover-speed-website.png" alt="">
-                <figcaption>Caption Of The Image</figcaption>
-            </figure>
-        </section>
-        <article>
-            Article content
-        </article>
-        <aside>
-            Sidebar
-        </aside>
-        <hr>
-        <footer>
-            Footer
-        </footer>
+        <div>
+            <h1>Book Store</h1>
+            <p>This Is My Book Store, Welcome</p>
+        </div>
+        <audio src="media/Audio-sample.mp3" type="audio/mpeg" controls loop autoplay></audio>
+        <br>
+        <audio controls muted>
+            <source src="https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_1MG.mp3" type="audio/mpeg">
+            <source src="https://file-examples-com.github.io/uploads/2017/11/file_example_WAV_1MG.wav" type="audio/wav">
+            <source src="https://file-examples-com.github.io/uploads/2017/11/file_example_OOG_1MG.ogg" type="audio/ogg">
+            Your Browser Doesn't Support Audio Tags
+        </audio>
     </body>
 </html>
