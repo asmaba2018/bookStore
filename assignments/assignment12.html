@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+    Question #12
+    Create a table like provided in the next link
+    href="https://elzero.org/wp-content/uploads/2021/01/html-assigns-15-to-18.png"
+    make sure it fills screen width
+    fill names and other data without missing any cell
+    picture size should be 40px x 40px
+    fill hyper links with any favorite link
+    make sure all links open in a new tab or window
+    use HTML elements only without help of css styling language
+    first name and last name in two different lines
+    first entity have two e-mail should be separated with line
+    add caption for this table like "Members Data"
+    make use of following attributes:
+        - width attribute
+        - rowspan attribute
+    make use of place holders from placeholder.com
+-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment #12</title>
+</head>
+<body>
+    <table border="1" width=100%>
+        <caption>Member Data</caption>
+        <thead>
+            <tr>
+                <th>Group</th>
+                <th>Avatar</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Character</th>
+                <th>Profile</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2"> Ninja</td>
+                <td><img src="https://via.placeholder.com/40x40/F00" alt=""></td>
+                <td>Osama <br> Mohamed</td>
+                <td>o1@nn.sa <hr> o2@nn.sa</td>
+                <td>&copy;</td>
+                <td><a href="#" target="_blank">Profile</a></td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/40x40/00F" alt=""></td>
+                <td>Shady <br> Nabil</td>
+                <td>s@nn.sa</td>
+                <td>&trade;</td>
+                <td><a href="#" target="_blank">Profile</a></td>
+            </tr>
+            <tr>
+                <td>Monsters</td>
+                <td><img src="https://via.placeholder.com/40x40/000" alt=""></td>
+                <td>Mohamed <br> Ibrahim</td>
+                <td>m@nn.sa</td>
+                <td>&reg;</td>
+                <td><a href="#" target="_blank">Profile</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5">Total Members</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <img src="https://elzero.org/wp-content/uploads/2021/01/html-assigns-15-to-18." alt="add png to show broken image link">
+</body>
+</html>

@@ -8,12 +8,34 @@
         <!-- This Is Comment -->
     </head>
     <body>
-        <!-- h1 - h6 -->
-        <h1>Book Store</h1>
-        <p>This is My Book Store, Welcome.</p> <p>We Have A Big Sale</p>
-
-        Line 1
-        Line 2
-        Line 4
+        <!--
+            use audio tag to play an audio file in your document
+            src attribute in audio tag to hold reference for audio file
+            alternate use source tag to provide more alt. audio types
+                to avoid supporting problems
+            type attribute to inform browser with audio type
+            controls attribute to show controlling buttons
+            autoplay attribute to enable autoplay when document loaded
+            loop attribute to enable loop playing over and over
+            width attribute to specify video player width
+            height attribute to spcify video player height
+            poster attribute to reference a poster image before video playing
+            track attribute to reference accessability and subtitle files
+            preload attribute specifies how browser should load video when document loaded
+        -->
+        <div>
+            <h1>Book Store</h1>
+            <p>This Is My Book Store, Welcome</p>
+        </div>
+        <video src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4" type="video/mp4" controls></video>
+        <br>
+        <video controls width="600" height="400" muted poster="images/elzero-cover-speed-website.png" preload="none">
+            <source src="https://file-examples-com.github.io/uploads/2020/03/file_example_WEBM_480_900KB.webm" type="video/webm">
+            <source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+            <source src="https://file-examples-com.github.io/uploads/2018/04/file_example_OGG_480_1_7mg.ogg" type="video/ogg">
+            Your Browser Doesn't Support Video Tags
+            <track src="my_file_en.vtt" kind="subtitles" srclang="en" label="English">
+            <track src="my_file_it.vtt" kind="subtitles" srclang="it" label="Italian">
+        </video>
     </body>
 </html>
