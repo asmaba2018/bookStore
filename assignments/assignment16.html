@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+    Question #16
+    Create an Video Element With Three Different Extensions
+    Add a Message When Browser Doesn't Support all Extensions
+    Apply Autoplaying attribute
+    Apply Sound Muting attribute
+    Add Caption Support For Two Different Languages
+    Add Poster With Any Photo Showed When Video Loaded
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Book Store</title>
+        <meta name="description" content="Assignment Question #16 Create Video Element With Different Extentions">
+    </head>
+    <body>
+        <video controls muted autoplay poster="images/elzero-cover-speed-website.png">
+            <source src="https://file-examples-com.github.io/uploads/2020/03/file_example_WEBM_480_900KB.webm" type="video/webm">
+            <source src="https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+            <source src="https://file-examples-com.github.io/uploads/2018/04/file_example_OGG_480_1_7mg.ogg" type="video/ogg">
+            Your Browser Doesn't Support Video Tags
+            <track src="my_file_ar.vtt" kind="subtitles" srclang="ar" label="Arabic">
+            <track src="my_file_en.vtt" kind="subtitles" srclang="en" label="English">
+        </video>
+    </body>
+</html>
