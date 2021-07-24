@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- This is for choosing characters set -->
+        <meta charset="UTF-8">
+        <title>Book Store</title>
+        <meta name="description" content="This Is Our Book Store">
+        <!-- This Is Comment -->
+    </head>
+    <body>
+        <!--
+            Use forms to get data from users and forward it for processing
+            action attribute holds the URI of submit file to handle user input
+            method attribute define how to send form data to backend process
+            - get: query showed with document reference or link in the bowser
+            - post: hide query from reference but available in the browser
+            label element to descripe input type
+            All elements used with the form should be inside form element
+            input element one of most valuable form elements
+            input is an inline element and self closing tag
+            type atribute to define input data type
+                - text: regular text without formatting
+                - password: hidden text with stars
+                - submit: button responsible for sending recieved user data
+                - email: validate input data formatted as an email and prevent submitting if not
+            input element attributes used 
+            - required: prevent submit until field filld with data
+            - placeholder: show gray message in the field as a hint for user data
+            - value: show a default value as user input can edit later & change submit caption
+            - name: define name of each field to be submitted to backend process
+        -->
+        <div>
+            <h1>Book Store</h1>
+            <p>This Is My Book Store, Welcome</p>
+        </div>
+        <form action="" method="POST">
+            <div>
+                <label>User Name</label>
+                <input type="text" required placeholder="User Name" name="user">
+            </div>
+            <br>
+            <div>
+                <label>Subject</label>
+                <input type="text" name="sub">
+            </div>
+            <br>
+            <div>
+                <label>Password</label>
+                <input type="password" required placeholder="Write Strong Password" name="pass">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" required placeholder="Write Valid Email" name="mail">
+            </div>
+            <br>
+            <input type="submit" value="Save">
+        </form>
+    </body>
+</html>
