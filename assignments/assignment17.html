@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+    Question # 17
+    Create input form of 5 visible fields
+    Each input field should have a label before it
+    Fields should be "Username, Password, Mobile, Email, Subject"
+    Select proper field type for each one according to its label
+    Mobile field could hold value "+123 (234) 20100"
+    All fields are optional but only Username and Email are required
+    All fields should show a text to guide user how to fill in
+    Chose a proper message for each field
+    Separate lables from input fields each in a new row
+    Separate each label and field group with a horizontal line
+    All data collected from user should passed to another document "test.py"
+    Make sure data never showed in the link bar
+    Take a snapshot of Query String after submitting sample input data
+    Add a hidden input field holding any number you choose
+    Form should have a reset button to empty all input fields and labeled "Empty Form"
+    Form should have a submit button labeled "Send Data"
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My New Form</title>
+    <meta name="description" content="Assignment Question #17 Create Input Form of 5 Input Fields With Submit and Reset buttons">
+</head>
+<body>
+    <form action="test.py" method="POST">
+        <div>
+            <input type="hidden" name="userId" value="1234">
+            <div>
+                <label>Username</label>
+                <br>
+                <input type="text" name="name" required placeholder="Enter Your Full Name">
+                <hr>
+            </div>
+            <div>
+                <label>Password</label>
+                <br>
+                <input type="password" name="pass" placeholder="Type a Strong Password">
+                <hr>
+            </div>
+            <div>
+                <label>Mobile</label>
+                <br>
+                <input type="tel" name="mobile" placeholder="Type a valid Mobile Number" value="+123 (234) 20100">
+                <hr>
+            </div>
+            <div>
+                <label>Email</label>
+                <br>
+                <input type="email" name="mail" required placeholder="Type a valid Email">
+                <hr>
+            </div>
+            <div>
+                <label>Subject</label>
+                <br>
+                <input type="text" name="sub" placeholder="Enter Your Subject Here">
+            </div>
+            <br>
+            <input type="reset" value="Empty Form">
+            <input type="submit" value="Send Data">
+        </div>
+    </form>
+</body>
+</html>
