@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+    Question #18
+    Create input form of 2 visible fields & 1 hidden
+    Each input field should have a label before it
+    Fields should be "Email, Username"
+    Select proper field type for each one according to its label
+    username field is required and hold 5 =< number of characters <= 20
+    Email field cann't be edited and hold value "o@o.com"
+    cursor should be set to username by default
+    Add a hidden input field name it "token" holding value "b92f1fc2fce391ad7af633723afd3055"
+    Form should have a reset button to empty all input fields and labeled "Empty"
+    Form should have a submit button labeled "Send"
+    All data collected from user should passed to the same document/page
+    and follow same structure in the link "https://elzero.org/wp-content/uploads/2021/01/html-form-assignment-28-30.png"
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment #18</title>
+    <meta name="description" content="Assignment Question #18 Create Input Form of 3 Input Fields With Send and Empty buttons">
+</head>
+
+<body>
+    <form action="">
+        <input 
+            type="hidden" 
+            name="token" 
+            value="b92f1fc2fce391ad7af633723afd3055">
+
+        <div>
+            <label for="mail">Email Adress</label>
+            <br>
+            <input type="email" 
+                name="email" 
+                id="mail" 
+                value="o@o.com" 
+                readonly>
+        </div>
+        <br>
+        <div>
+            <label for="name">Username</label>
+            <br>
+            <input type="text" 
+                name="username" 
+                id="name" 
+                required 
+                autofocus 
+                minlength="5" 
+                maxlength="20">
+        </div>
+        <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Empty">
+    </form>
+    <hr>
+    <div>
+        <label for="sample">Sample for your Submit Query to Follow</label>
+        <br>
+        <img src="https://elzero.org/wp-content/uploads/2021/01/html-form-assignment-28-30.png" 
+            alt="Submit Sample Should Follow" 
+            id="sample">
+    </div>
+</body>
+
+</html>
