@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!--
+    Question #20
+    Create input form of 6 visible fields & 1 hidden
+    Each input field should have a label before it
+    Fields should be "Email, Username, Skills, Job, Book, Brief"
+    Select proper field type for each one according to its label and content
+    username field is required and hold 5 =< number of characters <= 20
+    Email field cann't be edited and hold value "o@o.com"
+    cursor should be set to username by default
+    Hidden input field name is "token" and holding value "b92f1fc2fce391ad7af633723afd3055"
+    Skills field should hold a list of multiple choice with the following values:
+        - "Problem Solving"
+        - "Logical Thinking"
+        - "Advanced Search"
+        - "Analysis"
+        - "Planning"
+    Job field should hold a list of single choice with the following values:
+        - "Front-End Developer"
+        - "Back-End Developer"
+        - "Business Analyst"
+        - "Project Manager"
+        - "Scrum Master"
+    Each choice label activates its check box when clicked
+    make sure at least one choice in each list is selected
+    Book field should be adrop list showing different program versions to choose from
+        like photo linked in this page
+    Brief field should a long text input field with a message to user
+        "Write Here Why You Want To Learn Programing"
+    Form should have a reset button to empty all input fields and labeled "Empty"
+    Form should have a submit button labeled "Send"
+    All data collected from user should passed to the same document/page
+    and follow same structure in the link "https://elzero.org/wp-content/uploads/2021/01/html-form-assignment-28-30-3.png"
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment #19</title>
+    <meta name="description" content="Assignment Question #19 Create Input Form of 5 Input Fields With Send and Empty buttons">
+</head>
+<body>
+    <form action="">
+        <input 
+            type="hidden" 
+            name="token" 
+            value="b92f1fc2fce391ad7af633723afd3055">
+
+        <div>
+            <label for="mail">Email Adress</label>
+            <br>
+            <input type="email" 
+                name="email" 
+                id="mail" 
+                value="o@o.com" 
+                readonly>
+        </div>
+        <br>
+        <div>
+            <label for="name">Username</label>
+            <br>
+            <input type="text" 
+                name="username" 
+                id="name" 
+                required 
+                autofocus 
+                minlength="5" 
+                maxlength="20">
+        </div>
+        <br>
+        <div>
+            <label>Your Skills</label>
+            <div>
+                <input type="checkbox" 
+                name="skills" 
+                id="psolve" 
+                value="Problem Solving" 
+                checked>
+                <label for="psolve">Problem Solving</label>
+            </div>
+            <div>
+                <input type="checkbox" 
+                name="skills" 
+                id="lthink" 
+                value="Logical Thinking">
+                <label for="lthink">Logical Thinking</label>
+            </div>
+            <div>
+                <input type="checkbox" 
+                name="skills" 
+                id="asearch" 
+                value="Advanced Search">
+                <label for="asearch">Advanced Search</label>
+            </div>
+            <div>
+                <input type="checkbox" 
+                name="skills" 
+                id="analysis" 
+                value="Analysis">
+                <label for="analysis">Analysis</label>
+            </div>
+            <div>
+                <input type="checkbox" 
+                name="skills" 
+                id="planning" 
+                value="Planning">
+                <label for="planning">Planning</label>
+            </div>
+        </div>
+        <br>
+        <div>
+            <label>Your Job</label>
+            <div>
+                <input type="radio" 
+                name="job" 
+                id="frontdev" 
+                value="Front-End Developer" checked>
+                <label for="frontdev">Front-End Developer</label>
+            </div>
+            <div>
+                <input type="radio" 
+                name="job" 
+                id="backdev" 
+                value="Back-End Developer">
+                <label for="backdev">Back-End Developer</label>
+            </div>
+            <div>
+                <input type="radio" 
+                name="job" 
+                id="buanalyst" 
+                value="Business Analyst">
+                <label for="buanalyst">Business Analyst</label>
+            </div>
+            <div>
+                <input type="radio" 
+                name="job" 
+                id="pm" 
+                value="Project Manager">
+                <label for="pm">Project Manager</label>
+            </div>
+            <div>
+                <input type="radio" 
+                name="job" 
+                id="scm" 
+                value="Scrum Master">
+                <label for="scm">Scrum Master</label>
+            </div>
+        </div>
+        <br>
+        <label for="book">Choose Book</label>
+        <select name="book" id="book">
+            <optgroup label="PHP">
+                <option value="PHP v5.0">v5.0</option>
+                <option value="PHP v7.0">v7.0</option>
+                <option value="PHP v8.0">v8.0</option>
+            </optgroup>
+            <optgroup label="Python">
+                <option value="Python v2.0">v2.0</option>
+                <option value="Python v3.0">v3.0</option>
+                <option value="Python v3.9">v3.9</option>
+            </optgroup>
+        </select>
+        <hr>
+        <textarea name="brief" 
+            cols="30" 
+            rows="10" 
+            placeholder="Write Here Why You Want To Learn Programing"></textarea>
+        <br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Empty">
+    </form>
+    <hr>
+    <div>
+        <label for="sample">Sample for your Submit Query to Follow</label>
+        <br>
+        <img src="https://elzero.org/wp-content/uploads/2021/01/html-form-assignment-28-30-3.png" 
+            alt="Submit Sample Should Follow" 
+            id="sample">
+    </div>
+</body>
+</html>
