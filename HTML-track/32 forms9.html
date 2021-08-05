@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- This is for choosing characters set -->
+    <meta charset="UTF-8">
+    <title>Book Store</title>
+    <meta name="description" content="This Is Our Book Store">
+    <!-- This Is Comment -->
+</head>
+
+<body>
+    <!--
+            Use forms to get data from users and forward it for processing
+            action attribute holds the URI of submit file to handle user input
+            method attribute define how to send form data to backend process
+            - get: query showed with document reference or link in the bowser
+            - post: hide query from reference but available in the browser
+            novalidate attribute in testing phase to stop input fields validation rules
+            target attribute define when form submit to open targeted document
+            - _blank: open an empty form in a new tab and keep the old one need in testing phase
+            label element to descripe input type
+            for attribute to link label with input field using field id#
+            All elements used with the form should be inside form element
+            input element one of most valuable form elements
+            input is an inline element and self closing tag
+            type atribute to define input data type
+                - text: regular text without formatting
+                - password: hidden text with stars
+                - submit: button responsible for sending recieved user data
+                - email: validate input data formatted as an email and prevent submitting if not
+                - hidden: hide input field from the form but would be sent with other user data
+                - reset: to empty all the fields and return to default values
+                - color: hold hexadicimal color code selected from a pallete
+                - range: hold selected value from a range from min to max with step
+                * min: minimum range value showed to select from
+                * max: maximum range value showed to select from
+                * step: difference between any two sequenced range values
+                - number: hold a number only from min to max and with step if specified
+                * min, max, & step: like in range and if exceded a warning message showed and not allowing submit
+                - radio: choose only one from multiple choices
+                - checkbox: choose multi or all choices from multiple choise
+                - file: choose a file to upload with form and show its name in page
+                - search: type your search text and clear field with one click
+                - url: type only a valid url or link
+                - date: choose date from calender or type directly or use arrows
+                - month: choose month of a year as date
+                - time: choose time from drop list for hours and minutes and AM or PM or typing directly or using arrows
+            input element attributes used 
+            - required: prevent submit until field filld with data
+            - placeholder: show gray message in the field as a hint for user data
+            - value: show a default value as user input can edit later & change submit caption
+            - name: define name of each field to be submitted to backend process
+            - readonly: prevent field value from user editing
+            - disabled: data in this field will not send back end
+            - autofocus: after loading change focus to this field
+            - minlength: minimum character length to write in field
+            - maxlength: maximum character length to write in field
+            - checked: choose by default from radio fields
+            - list: used like select element with searching options when typing
+            select element used as a drop list of elements 
+            - most attributes are very similar to input without type
+            - multiple attribute to enable multiple choice from list
+            option element used as a select child to hold select values/text
+            - value attribute represent value sent to backend on submit
+            - selected attribute as default value when loading document
+            optgroup element used to group similar options as a group
+            - label attribute to label groups with descriptive names
+            textarea element used as text box with multilines input and resizable area
+            - cols attribute to specify default size of text box or number of columns
+            - rows attribute to specify default size of text box or number of rows
+            datalist element used to hold "list" data listed in the input field
+            - id: to link the same value in "list" attribute in input field
+                option element under datalist doesn't require a closing tag and show value attribute as content 
+        -->
+    <div>
+        <h1>Book Store</h1>
+        <p>This Is My Book Store, Welcome</p>
+    </div>
+    <form action="" method="POST" novalidate target="_blank">
+        <input type="hidden" value="Ahmed">
+        <div>
+            <label>User Name</label>
+            <input type="text" required placeholder="User Name" name="user" value="Ahmed" readonly>
+        </div>
+        <br>
+        <div>
+            <label>Subject</label>
+            <input type="text" name="sub" autofocus>
+        </div>
+        <br>
+        <div>
+            <label>Password</label>
+            <input type="password" required placeholder="Write Strong Password" name="pass" minlength="10"
+                maxlength="20">
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="email" required placeholder="Write Valid Email" name="mail" disabled>
+        </div>
+        <br>
+        <div>
+            <label>Color</label>
+            <input type="color" name="Color">
+        </div>
+        <br>
+        <div>
+            <label>Range</label>
+            <input type="range" name="Range" min="0" max="100" step="20" value="0">
+        </div>
+        <br>
+        <div>
+            <label for="num">Number</label>
+            <input type="number" name="number" id="num" min="50" max="200" step="5">
+        </div>
+        <hr>
+        <div>
+            <input type="radio" name="os" id="win" value="Windows">
+            <label for="win">Windows</label>
+        </div>
+        <div>
+            <input type="radio" name="os" id="lin" value="Linux">
+            <label for="lin">Linux</label>
+        </div>
+        <div>
+            <input type="radio" name="os" id="mac" value="Mac">
+            <label for="mac">Mac</label>
+        </div>
+        <hr>
+        <div>
+            <input type="checkbox" name="os1" id="win1" value="Windows" checked>
+            <label for="win1">Windows</label>
+        </div>
+        <div>
+            <input type="checkbox" name="os1" id="lin1" value="Linux">
+            <label for="lin1">Linux</label>
+        </div>
+        <div>
+            <input type="checkbox" name="os1" id="mac1" value="Mac">
+            <label for="mac1">Mac</label>
+        </div>
+
+        <label for="book">Choose Book</label>
+        <select name="book" id="book" multiple>
+            <optgroup label="Romantic Books">
+                <option value="1">Book 1</option>
+                <option value="2">Book 2</option>
+                <option value="3">Book 3</option>
+            </optgroup>
+            <optgroup label="Police Books">
+                <option value="4" selected>Book 4</option>
+                <option value="5">Book 5</option>
+                <option value="6">Book 6</option>
+            </optgroup>
+        </select>
+        <br>
+        <textarea name="subject1" id="sub1" cols="30" rows="10" placeholder="Test Text"></textarea>
+        <hr>
+        <label>Upload</label>
+        <input type="file">
+        <hr>
+        <label>Search</label>
+        <input type="search">
+        <hr>
+        <label>URL</label>
+        <input type="url">
+        <hr>
+        <label>Date</label>
+        <input type="date">
+        <hr>
+        <label>Month</label>
+        <input type="month">
+        <hr>
+        <label>Time</label>
+        <input type="time">
+        <br>
+        <label>Programming Languages</label>
+        <input list="programming" name="prog">
+
+        <datalist id="programming">
+            <option value="Python">
+            <option value="PHP">
+        </datalist>
+        <br>
+        <input type="reset" name="Reset">
+        <input type="submit" value="Save">
+    </form>
+</body>
+
+</html>
