@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <!--
-    Question #21
-    Create input form of 3 visible fields
+    Question #22
+    Create input form of 5 visible fields
     Each input field should have a label before it
-    Fields should be "Search, File, URL"
+    Fields should be "Search, File, URL, Date, Month"
     Select proper field type according to its label and content
     Search field should show this message "Enter A Search Word"
     cursor should be set to Search by default
     URL field is required 
+    Date field default value should set to "25/10/1982"
+    Month field default alue should set to "October 1982"
     Form should have a reset button to empty all input fields and labeled "Empty"
     Form should have a submit button labeled "Save"
     A new tab should be opened when form submitted
     submit form should ignore required URL field and submit anyway
     Follow linked design "https://elzero.org/wp-content/uploads/2021/01/html-form-assignment-31-34.png"
+    and "https://elzero.org/wp-content/uploads/2021/01/html-form-assignment-31-34-2.png"
 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment #21</title>
-    <meta name="description" content="Assignment Question #21 Create Input Form of 3 Input Fields With Save and Empty buttons">
+    <title>Assignment #22</title>
+    <meta name="description" content="Assignment Question #22 Create Input Form of 5 Input Fields With Save and Empty buttons">
 </head>
 <body>
     <form target="_blank">
@@ -39,9 +42,17 @@
             <br>
             <input type="url" name="url" id="url" required>
         </div>
+        <div>
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" value="1982-10-25">
+        </div>
+        <div>
+            <label for="month">Month</label>
+            <input type="month" name="month" id="month" value="October 1982">
+        </div>
         <input type="reset" value="Empty">
         <input type="submit" formnovalidate value="Save">
     </form>
-    <img src="https://elzero.org/wp-content/uploads/2021/01/html-form-assignment-31-34.png" alt="Sample Input Form to Follow">
+    <!-- <img src="https://elzero.org/wp-content/uploads/2021/01/html-form-assignment-31-34-2.png" alt="Sample Input Form to Follow"> -->
 </body>
 </html>
