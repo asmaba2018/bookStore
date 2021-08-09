@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- This is for choosing characters set -->
+        <meta charset="UTF-8">
+        <title>Book Store</title>
+        <meta name="description" content="This Is Our Book Store">
+        <!-- This Is Comment -->
+    </head>
+    <body>
+        <!--
+            Accessibility
+            to choose the right element or best fit for your content
+            make it easier for physical challenged people in eyesight to read your page
+            input fields need labels to be more accessibility
+            in chrome use inspect and then select light house to check your document
+            choose inspection methods and a full report showed after analysing document
+            you can customize any element using JS to be interactive regarding its nature
+            when accessibility is your concern then follow lighthouse inspection instructions
+            not only element selction also colors and contrast need to take in consideration
+            when using a div element to behave like checkbox you need to add role attribute with checkbox value
+            to choose a specific one add aria-checked attribute with true value
+            to change from one div to another with tabindex attribute to hold order
+            to link it with a label add aria-labeledby attribute with label element ID value
+        -->
+        <!-- Aria -->
+        <h1>Book Title</h1>
+
+        <h3>Chapter One</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad autem ipsum, ab fugit suscipit consequatur cumque praesentium labore incidunt accusamus nam, alias ea, delectus sed porro? Laudantium provident impedit hic.
+        </p>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas molestias obcaecati voluptate. Modi totam omnis animi atque alias. Earum quasi eveniet voluptatem consectetur cumque delectus minima repellendus voluptates quia numquam.
+        </div>
+        <h2>Inside chapter One</h2>
+        <form action="">
+            <label for="skill1">Skill One</label>
+            <input type="checkbox" checked id="skill1">
+            <label for="skill2">Skill Two</label>
+            <input type="checkbox" checked id="skill2">
+        </form>
+        <hr>
+        <div role="checkbox" aria-checked="true" tabindex="0" aria-labelledby="plan1">Plan One</div>
+        <label id="plan1">Plan One Label</label>
+        <div>Plan Two</div>
+        <div>Plan Three</div>
+    </body>
+</html>
