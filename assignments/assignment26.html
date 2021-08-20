@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+    Assignment #26
+    read careully the following document and add/modify neccessary attributes
+    to keep it more accessable with screen readers
+    this document contains a list of personal skills to choose from
+    <div class="choose-skill">
+        <div class="skill">Python</div>
+        <label>Skill One</label>
+        <div class="skill">PHP</div>
+        <label>Skill Two</label>
+        <div class="skill">JavaScript</div>
+        <label>Skill Three</label>
+    </div>
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment #26</title>
+    <meta name="description" content="Assignment Questions #26 add required attributes to the following document to make it more accessibility with screen readers">
+</head>
+<body>
+    <div class="choose-skill">
+        <div class="skill" role="checkbox" tabindex="0" aria-labelledby="skills1">Python</div>
+        <label id="skills1">Skill One</label>
+        <div class="skill" role="checkbox" tabindex="0" aria-labelledby="skills2">PHP</div>
+        <label id="skills2">Skill Two</label>
+        <div class="skill" role="checkbox" tabindex="0" aria-labelledby="skills3">JavaScript</div>
+        <label id="skills3">Skill Three</label>
+    </div>
+</body>
+</html>
